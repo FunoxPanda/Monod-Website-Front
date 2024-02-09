@@ -1,0 +1,863 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter Tight&family=Italiana&family=Antic Didone&display=swap');
+
+:root {
+    --primary: #5a7c88;
+    --dark-primary: #384f57;
+    --smooth-grey: #f5f5f5;
+    --red: #ae5548;
+    --dark-red: #8e3e33;
+}
+
+html,
+body {
+    font-family: 'Inter Tight'
+}
+
+.hero {
+    height: 98.5vh;
+
+    /* Margin de .25rem sur les contours */
+    margin: .25rem;
+    padding: .25rem;
+    color: white;
+
+
+    background: linear-gradient(rgba(90, 124, 136, .5), rgba(90, 124, 136, .5)), url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Faire que l'image de fond bouge au scroll */
+    background-attachment: fixed;
+    /* Mettre un linear-gradient pour assombrir l'image de fond */
+
+
+    transition: .3s all ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 5rem;
+
+}
+
+.hero .since {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    filter: brightness(100%);
+}
+
+.hero .straigth-line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 1rem 0 1rem;
+    padding: 0 0 0 0;
+}
+
+.hero .year {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: 'Antic Didone', serif;
+
+    /* Prendre tout l'espace nécessaire mais pas de retour à la ligne */
+    white-space: nowrap;
+
+}
+
+.hero .text {
+    padding: 4em
+}
+
+.hero .slogan {
+    font-size: 3em;
+    font-weight: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: 'Antic Didone', serif;
+}
+
+.hero .cta {
+    padding: 2em
+}
+
+.hero .btn-home {
+    background-color: white;
+    border: none;
+    color: var(--dark-primary);
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.hero .btn-home:hover {
+    background-color: var(--primary);
+    color: white;
+    transition: .3s all ease;
+}
+
+/*
+
+        <div class="scroll">
+            <label>SCROLL</label>
+            <div class="line"></div>
+        </div>
+        */
+
+.scroll {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: scroll 2s infinite;
+
+    /* Centrer horizontalement */
+
+    left: 50%;
+
+}
+
+.scroll label {
+    font-size: 1.25em;
+    color: white;
+    font-family: 'Antic Didone', serif;
+}
+
+.scroll .line {
+    width: 1px;
+    height: 2.75rem;
+    background-color: white;
+    margin: .5rem 0 .5rem 0;
+    padding: 0 0 0 0;
+}
+
+/* Faire que le scroll aille de haut en bas toutes les 2 secondes et qu'elle remonte ensuite */
+
+@keyframes scroll {
+
+    0% {
+        transform: translateY(-1rem);
+    }
+
+    50% {
+        transform: translateY(1rem);
+    }
+
+    100% {
+        transform: translateY(-1rem);
+    }
+}
+
+
+
+/*
+
+
+    <section class="presentation">
+
+        <h2 class="title">Bienvenue au lycée Gustave Monod</h2>
+
+        <div class="content">
+            <p class="text">Lorem exercitation officia laborum velit id dolor occaecat do proident reprehenderit
+                voluptate esse velit. Id elit duis dolor adipisicing ut pariatur sit non proident nisi adipisicing
+                deserunt ut. Nulla excepteur nostrud velit fugiat ut Lorem esse tempor eu.</p>
+
+    </section>
+    */
+
+.title {
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: 'Antic Didone', serif;
+    color: var(--primary);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+}
+
+.content .subtitle {
+
+    margin: 1rem 0 1rem 0;
+
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+
+}
+
+/*                         <a href="#" class="more">En savoir plus <div class="underline"></div>
+ */
+
+.more {
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    transition: .3s all ease;
+    padding-bottom: .25rem;
+    letter-spacing: .1rem;
+}
+
+.underline {
+    width: 5rem;
+    height: 1px;
+    background-color: var(--primary);
+    transition: .3s all ease;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+
+.more:hover .underline {
+    width: 7rem;
+    transition: .3s all ease;
+}
+
+/* Actualité */
+
+.news {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 2rem 0;
+}
+
+.news .title {
+    font-size: 3em;
+    font-family: 'Antic Didone', serif;
+    color: var(--primary);
+}
+
+/*
+
+                        <div class="card card__news">
+                            <img src="./assets/images/lycée.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Titre de l'actualité</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+
+                                <div class="text-end">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+
+                            </div>
+                            */
+
+.card__news {
+    margin: 1rem 0 1rem 0;
+    padding: 0 0 0 0;
+    border: none !important;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    transition: .3s all ease;
+}
+
+.card__news:hover {
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, .2);
+    transition: .3s all ease;
+}
+
+.card__news .card-title {
+    font-size: .875em;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.card__news .card-text {
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--dark-primary);
+    font-family: 'Inter Tight';
+}
+
+.card__news .card-img-top {
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    width: auto !important;
+}
+
+
+.monod-background {
+    background-image: url('../images/inauguration.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+/* Footer */
+
+
+/* Navbar */
+
+.monod-logo {
+    max-height: 1.5rem;
+}
+
+/*
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparent fixed-top mt-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.png" alt="Logo Gustave Monod" class="d-inline-block align-text-top monod-logo">
+                </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Formations</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="btn-pronote" type="submit">Ouvrir Pronote</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    Dès qu'on commence à scroll le fond devient blanc
+
+    */
+
+.navbar {
+    background-color: transparent;
+    transition: .3s all ease;
+}
+
+
+.navbar.scrolled {
+    background-color: white !important;
+    transition: .3s all ease;
+    border-bottom: 1px solid var(--smooth-grey);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+
+.navbar .nav-link {
+    color: white;
+    transition: .3s all ease;
+}
+
+
+.nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 1rem 0 1rem;
+    color: white !important;
+    padding: 0 0 0 0;
+}
+
+.scrolled .nav-link {
+    color: var(--dark-primary) !important;
+    transition: .3s all ease;
+    color: black !important;
+
+}
+
+.btn-pronote {
+    background-color: var(--red);
+
+    border: none;
+    color: white;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: .3s all ease;
+    text-decoration: none;
+
+    letter-spacing: .05rem;
+
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+.btn-pronote:hover {
+    background-color: var(--dark-red);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    transition: .3s all ease;
+}
+
+/* 
+
+    <footer>
+
+        <img src="./assets/images/logotext.png" alt="Logo Gustave Monod" class="footer-logo">
+
+        <div class="row">
+            <div class="col-md-8">
+                <h5 class="footer-title">Liens utiles</h5>
+                <ul>
+                    <li><a href="#">Pronote</a></li>
+                    <li><a href="#">Espace élèves</a></li>
+                    <li><a href="#">Espace parents</a></li>
+                    <li><a href="#">Espace professeurs</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+
+                <h5 class="footer-title">Contact</h5>
+                <p>Adresse : 1 rue de la Libération, 95880 Enghien-les-Bains</p>
+                <p>Téléphone : 01 39 64 62 00</p>
+                <p>Email :
+
+
+            </div>
+        </div>
+
+
+    </footer>
+    <div class="subfooter">
+        <p>© 2021 Lycée Gustave Monod. Tous droits réservés.</p>
+    </div>
+
+*/
+
+footer {
+    background-color: var(--smooth-grey);
+
+    padding: 2rem 0 2rem 0;
+
+}
+.footer-logo {
+    max-height: 4.5rem;
+    width: auto;
+}
+
+.footer-title {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 0;
+    text-transform: uppercase;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+footer ul li {
+    margin: .25rem 0 .25rem 0;
+    padding: 0 0 0 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--dark-primary);
+    transition: .3s all ease;
+}
+
+footer ul li a:hover {
+    color: var(--primary);
+    transition: .3s all ease;
+}
+
+.subfooter {
+    background-color: var(--dark-primary);
+    color: white;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.subfooter p {
+    padding: 1rem 0 1rem 0;
+    margin: 0 !important;
+}
+
+.text-link {
+    text-decoration: none;
+    color: var(--red);
+    transition: .3s all ease;
+}
+
+.text-link:hover {
+    color: var(--dark-red);
+    transition: .3s all ease;
+}
+
+/*
+
+
+            <section class="proviseur-mot">
+                <h2 class="title my-5">Le mot du proviseur</h2>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-2">
+                        <div class="proviseur">
+                            <img src="./assets/images/proviseur.jpg" class="img-proviseur" alt="Proviseur">
+                            <span class="name">M. Pascal Lefèvre</span>
+                            <span class="fonction">Proviseur</span>
+                        </div>
+
+                        <p class="text">
+                            L’ensemble des équipes vous souhaite la bienvenue sur le site du lycée Polyvalent Gustave
+                            Monod.Vous pourrez y retrouver l'ensemble des informations sur les filières générales,
+                            technologiques et professionnelles, sur la vie du lycée et sur les nombreux projets proposés
+                            aux élèves.Ce lycée, qui accueille 2100 élèves et apprentis, offre également la possibilité
+                            de poursuivre ses études en MC, en BTS et en CPGE.Ce site a la volonté de mettre en avant
+                            notre dynamisme, notre engagement, notre volonté d’innovations au service de la réussite de
+                            tous les élèves et étudiants.Nous sommes impatients de vous retrouver dans notre lycée qui
+                            présente 2 sites, un site 'Lac' et un site 'Jardin' entièrement rénové.Vous pouvez également
+                            suivre l'actualité du lycée via le #MonodElBBonne visite
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+
+
+        </div>
+        </section>
+
+*/
+
+.proviseur-mot {
+    padding: 2rem 0 2rem 0;
+}
+
+.proviseur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.proviseur .img-proviseur {
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 0;
+
+    
+}
+
+/* Effet de haut/bas sur l'image du proviseur */
+
+.img-proviseur {
+    transition: .3s all ease;
+}
+
+.img-proviseur:hover {
+    transform: translateY(-.5rem);
+    transition: .3s all ease;
+}
+
+.proviseur .name {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 .5rem 0;
+    padding: 0 0 0 0;
+}
+
+.proviseur .fonction {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: var(--dark-primary);
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 0;
+}
+
+.proviseur-mot .text {
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--dark-primary);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+/*
+
+                    <input type="email" class="form-newsletter" placeholder="Adresse éléctronique" />
+
+                    <button class="btn-newsletter">S'inscrire</button>
+*/
+
+.form-newsletter {
+    background-color: var(--smooth-grey);
+    border: 1px solid transparent;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    color: var(--dark-primary);
+    margin-bottom: 1rem;
+    
+}
+
+.form-newsletter::placeholder {
+    color: var(--dark-primary);
+}
+
+.form-newsletter:focus {
+    outline: none;
+    border: 1px solid var(--primary);
+}
+
+.btn-newsletter {
+    background-color: var(--red);
+    border: none;
+    color: white;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+/*
+
+            <div class="col-md-4 mb-4">
+
+                <div class="card card__section">
+                    <img src="./assets/images/sections/abibac.jpg" class="card-img-top" alt="Section Abibac">
+                    <div class="card-body">
+                        <h5 class="card-title">Abibac</h5>
+
+                        <p class="card-text">
+                            La section Abibac est une section binationale franco-allemande, qui permet l'obtention du baccalauréat français et de l'Abitur allemand. Monod est le premier lycée de France à avoir ouvert cette section.
+                        </p>
+
+
+
+                        <div class="text-end">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            */
+
+.card__section {
+    margin: 1rem 0 1rem 0;
+    padding: 0 0 0 0;
+    border: none !important;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    transition: .3s all ease;
+}
+
+.card__section:hover {
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, .2);
+    transition: .3s all ease;
+}
+
+.card__section .card-title {
+    font-size: .875em;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.card__section .card-text {
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--dark-primary);
+    font-family: 'Inter Tight';
+}
+
+.card__section .card-img-top {
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    width: auto !important;
+}
+
+
+.subsection {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.welcome-img {
+    max-height: 25rem;
+}
+
+/*
+
+
+        <div class="sponsors">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Logo_SNCF_2011.svg/1024px-Logo_SNCF_2011.svg.png" alt="Sponsor 1" class="sponsor-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Acad%C3%A9mie_de_Versailles.svg/640px-Acad%C3%A9mie_de_Versailles.svg.png" alt="Sponsor 1" class="sponsor-img">
+            <img src="https://mlab-mlidf.org/wp-content/uploads/job-manager-uploads/company_logo/2021/11/logo_greta_du_val_doise.png" alt="Sponsor 1" class="sponsor-img">
+
+        </div>
+
+        */
+
+.sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.sponsor-img {
+    max-height: 3.5rem;
+    width: auto;
+    margin: 0 1rem 0 1rem;
+    padding: 0 0 0 0;
+    /* Image en noir et blanc */
+    filter: grayscale(100%);
+}
+
+/*
+
+                <div class="card card__club">
+                    <img src="./assets/images/club1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Club de théâtre</h5>
+                        <p class="card-text">Le club de théâtre est un club qui permet aux élèves de s'exprimer et de
+                            développer leur créativité.</p>
+                        <a href="#" class="more">Voir la page <div class="underline"></div></a>
+                    </div>
+                </div>
+                */
+
+.card__club {
+    margin: 1rem 0 1rem 0;
+    padding: 0 0 0 0;
+    border: 2px solid transparent !important;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    transition: .3s all ease;
+    
+}
+
+.card__club:hover {
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, .2);
+    transition: .3s all ease;
+}
+
+.card__club__recommendation {
+    border: 2px solid var(--red) !important;
+}
+
+.text-red {
+    color: var(--red) !important;
+}
+
+.card__club .card-title {
+    font-size: .875em;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.card__club .card-text {
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--dark-primary);
+    font-family: 'Inter Tight';
+}
+
+.card__club .card-img-top {
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    width: auto !important;
+}
+
+
+/* Instnaces */
+
+/*
+
+            <div class="col-md-4 mb-4">
+                <h3 class="instance-title">Maison des Lycéens</h3>
+
+                <div class="instance-presentation">
+                    La MDL est une association loi 1901 qui a pour but de fédérer les élèves autour de projets communs,
+                    de les aider à s'engager dans la vie de l'établissement et de les accompagner dans leurs démarches
+                    créatives.
+                </div>
+
+                <div class="instance-line"></div>
+
+                <h4 class="instance-subtitle">Les réseaux de la MDL</h4>
+            </div>
+            */
+
+.instance-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 0;
+}
+
+.instance-presentation {
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--dark-primary);
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 0;
+}
+
+.instance-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary);
+    margin: 1rem 0 1rem 0;
+    padding: 0 0 0 0;
+}
+
+.instance-subtitle {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 0;
+}
+
+/* Contact */
