@@ -1,0 +1,52 @@
+.Formations {
+
+
+    .hero__subpage {
+        height: 50vh;
+
+        box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+
+    }
+
+
+
+    .card__section {
+        margin: 1rem 0 1rem 0;
+        padding: 0 0 0 0;
+        border: none !important;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+        transition: .3s all ease;
+
+        &:hover {
+            box-shadow: 0 0 1.5rem rgba(0, 0, 0, .2);
+            transition: .3s all ease;
+        }
+
+        .card-title {
+            font-size: .875em;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .card-text {
+            font-size: 1.125em;
+            font-weight: 400;
+            color: var(--dark-primary);
+            font-family: 'Inter Tight';
+        }
+
+        .card-img-top {
+            height: 15rem;
+            object-fit: cover;
+            object-position: center;
+            width: auto !important;
+        }
+    }
+    .subsection {
+        font-size: 1em;
+        font-weight: 700;
+        color: var(--primary);
+        text-transform: uppercase;
+    }
+}

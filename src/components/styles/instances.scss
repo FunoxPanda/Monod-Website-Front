@@ -1,0 +1,60 @@
+.Instances {
+
+    .hero__subpage {
+        height: 50vh;
+
+        box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+
+    }
+
+    .welcome-img {
+        max-height: 25rem;
+    }
+
+    .instance-title {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: var(--primary);
+        margin: 0 0 1rem 0;
+        padding: 0 0 0 0;
+    }
+    
+    .instance-presentation {
+        font-size: 1.125em;
+        font-weight: 400;
+        color: var(--dark-primary);
+        margin: 0 0 1rem 0;
+        padding: 0 0 0 0;
+    }
+    
+    .instance-line {
+        width: 100%;
+        height: 1px;
+        background-color: var(--primary);
+        margin: 1rem 0 1rem 0;
+        padding: 0 0 0 0;
+    }
+    
+    .instance-subtitle {
+        font-size: 1.25em;
+        font-weight: 700;
+        color: var(--primary);
+        margin: 0 0 1rem 0;
+        padding: 0 0 0 0;
+    }
+
+    .ul-background {
+        background-image: url('../images/instances.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+}

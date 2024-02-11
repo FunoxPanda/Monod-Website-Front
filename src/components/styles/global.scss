@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter Tight&family=Italiana&family=Antic Didone&display=swap');
+
+:root {
+    --primary: #5a7c88;
+    --dark-primary: #384f57;
+    --smooth-grey: #f5f5f5;
+    --red: #ae5548;
+    --dark-red: #8e3e33;
+}
+
+html,
+body {
+    //font-family: 'Inter Tight'
+}
+
+
+.monod-logo {
+    max-height: 1.5rem;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: .3s all ease;
+}
+
+
+.navbar.scrolled {
+    background-color: white !important;
+    transition: .3s all ease;
+    border-bottom: 1px solid var(--smooth-grey);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+
+.navbar .nav-link {
+    color: white;
+    transition: .3s all ease;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+
+.nav-link {
+    font-weight: 0;
+    text-transform: uppercase;
+    margin: 0 1rem 0 1rem;
+    color: white !important;
+    padding: 0 0 0 0;
+}
+
+.scrolled .nav-link {
+    color: var(--dark-primary) !important;
+    transition: .3s all ease;
+    color: black !important;
+
+}
+
+.btn-pronote {
+    background-color: var(--red);
+
+    border: none;
+    color: white;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: .3s all ease;
+    text-decoration: none;
+
+    letter-spacing: .05rem;
+
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+.btn-pronote:hover {
+    background-color: var(--dark-red);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    transition: .3s all ease;
+}
+
+
+
+.form-newsletter {
+    background-color: var(--smooth-grey);
+    border: 1px solid transparent;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    color: var(--dark-primary);
+    margin-bottom: 1rem;
+
+}
+
+.form-newsletter::placeholder {
+    color: var(--dark-primary);
+}
+
+.form-newsletter:focus {
+    outline: none;
+    border: 1px solid var(--primary);
+}
+
+.btn-newsletter {
+    background-color: var(--red);
+    border: none;
+    color: white;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+
+.navbar-toggler {
+    background-color: var(--red) !important;
+    border: 1px solid var(--red) !important;
+    color: white !important;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: .3s all ease;
+    text-decoration: none;
+
+    letter-spacing: .05rem;
+
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.text-link {
+    text-decoration: none;
+    color: var(--red);
+    transition: .3s all ease;
+}
+
+.text-link:hover {
+    color: var(--dark-red);
+    transition: .3s all ease;
+}
+
+/* FOOTER */
+
+
+
+footer {
+    background-color: var(--smooth-grey);
+
+    padding: 2rem 0 2rem 0;
+
+}
+
+.footer-logo {
+    max-height: 4.5rem;
+    width: auto;
+}
+
+.footer-title {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 0;
+    text-transform: uppercase;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+footer ul li {
+    margin: .25rem 0 .25rem 0;
+    padding: 0 0 0 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--dark-primary);
+    transition: .3s all ease;
+}
+
+footer ul li a:hover {
+    color: var(--primary);
+    transition: .3s all ease;
+}
+
+.subfooter {
+    background-color: var(--dark-primary);
+    color: white;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.subfooter p {
+    padding: 1rem 0 1rem 0;
+    margin: 0 !important;
+}
+
+
+/* HERO */
+
+
+.hero {
+    height: 98.5vh;
+
+    /* Margin de .25rem sur les contours */
+    margin: .25rem;
+    padding: .25rem;
+    color: white;
+
+
+    background: linear-gradient(rgba(90, 124, 136, .5), rgba(90, 124, 136, .5)), url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Faire que l'image de fond bouge au scroll */
+    background-attachment: fixed;
+    /* Mettre un linear-gradient pour assombrir l'image de fond */
+
+
+    transition: .3s all ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 5rem;
+
+    .since {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        filter: brightness(100%);
+    }
+
+    .straigth-line {
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        margin: 0 1rem 0 1rem;
+        padding: 0 0 0 0;
+    }
+
+    .year {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        font-family: 'Antic Didone', serif;
+
+        /* Prendre tout l'espace nécessaire mais pas de retour à la ligne */
+        white-space: nowrap;
+
+    }
+
+    .text {
+        padding: 4em;
+        padding-bottom: .25rem;
+    }
+
+    .slogan {
+        font-size: 3rem;
+        font-weight: 0;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        font-family: 'Antic Didone', serif;
+    }
+
+    .cta {
+        padding: 2em
+    }
+
+    .btn-home {
+        background-color: white;
+        border: none;
+        color: var(--dark-primary);
+        padding: 1em 2em;
+        cursor: pointer;
+        transition: .3s all ease;
+    }
+
+    .btn-home:hover {
+        background-color: var(--primary);
+        color: white;
+        transition: .3s all ease;
+    }
+
+
+    .scroll {
+        position: absolute;
+        bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        animation: scroll 2s infinite;
+
+        /* Centrer horizontalement */
+
+        left: 50%;
+
+    }
+
+    .scroll label {
+        font-size: 1.25em;
+        color: white;
+        font-family: 'Antic Didone', serif;
+    }
+
+    .scroll .line {
+        width: 1px;
+        height: 2.75rem;
+        background-color: white;
+        margin: .5rem 0 .5rem 0;
+        padding: 0 0 0 0;
+    }
+
+    /* Faire que le scroll aille de haut en bas toutes les 2 secondes et qu'elle remonte ensuite */
+
+    @keyframes scroll {
+
+        0% {
+            transform: translateY(-1rem);
+        }
+
+        50% {
+            transform: translateY(1rem);
+        }
+
+        100% {
+            transform: translateY(-1rem);
+        }
+    }
+
+    .swann {
+        img {
+            width: 7.5rem;
+            height: 7.5rem;
+            filter: invert(100%);
+        }
+    }
+
+}
+
+
+.title {
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: 'Antic Didone', serif;
+    color: var(--primary);
+}
+
+
+
+.more {
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    transition: .3s all ease;
+    padding-bottom: .25rem;
+    letter-spacing: .1rem;
+
+    .underline {
+        width: 5rem;
+        height: 1px;
+        background-color: var(--primary);
+        transition: .3s all ease;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    &:hover .underline {
+        width: 7rem;
+        transition: .3s all ease;
+    }
+}
+
+ul {
+    .dropdown {
+
+        .dropdown-item:hover,
+        .dropdown-item:focus {
+            background-color: var(--dark-primary) !important;
+            color: white !important;
+            transition: .3s all ease;
+
+        }
+
+        .active {
+            background-color: var(--primary) !important;
+            color: white;
+            transition: .3s all ease;
+        }
+    }
+}
