@@ -3,7 +3,8 @@ import Navigation from '../components/Navigation';
 
 import '../components/styles/home.scss';
 import Footer from '../components/Footer';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 
 class Home extends Component {
@@ -38,7 +39,7 @@ class Home extends Component {
                     <h2 className="title">Bienvenue au lycée Gustave Monod</h2>
 
                     <div className="row px-4 mb-5">
-                        <div className="col-md-6">
+                        <div className="col-md-6 mb-2">
                             <section className="presentation">
 
 
@@ -67,22 +68,26 @@ class Home extends Component {
                                     </p>
                                     <NavLink to="/formations" className="more ms-4">En savoir plus <div className="underline"></div></NavLink>
 
-                                    </div>
+                                </div>
 
                             </section>
                         </div>
                         <div className="col-md-6 px-4 text-center">
-                            <img src="./assets/images/lycée_2.jpg" alt="Lycée Gustave Monod" className="img-fluid welcome-img" /><br />
+                            <img src={process.env.PUBLIC_URL + "/assets/images/lycée_2.jpg"} alt="Lycée Gustave Monod" className="img-fluid welcome-img" onClick={
+                                () => window.open(process.env.PUBLIC_URL + "/assets/images/lycée_2.jpg", "_blank")
+                            } /><br />
                             <small className="text-muted">Château Léon &copy; David Davrain</small>
                         </div>
                     </div>
+                    <div className="container-fluid">
 
                     <div className="sponsors">
 
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Logo_SNCF_2011.svg/1024px-Logo_SNCF_2011.svg.png" alt="Sponsor 1" className="sponsor-img" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Acad%C3%A9mie_de_Versailles.svg/640px-Acad%C3%A9mie_de_Versailles.svg.png" alt="Sponsor 1" className="sponsor-img" />
-                        <img src="https://mlab-mlidf.org/wp-content/uploads/job-manager-uploads/company_logo/2021/11/logo_greta_du_val_doise.png" alt="Sponsor 1" className="sponsor-img" />
+                        <Link to="https://sncf.fr/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Logo_SNCF_2011.svg/1024px-Logo_SNCF_2011.svg.png" alt="Sponsor 1" className="sponsor-img" /></Link>
+                        <Link to="https://ac-versailles.fr/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Acad%C3%A9mie_de_Versailles.svg/640px-Acad%C3%A9mie_de_Versailles.svg.png" alt="Sponsor 2" className="sponsor-img" /></Link>
+                        <Link to="https://www.greta-95.fr/5-accueil"><img src="https://mlab-mlidf.org/wp-content/uploads/job-manager-uploads/company_logo/2021/11/logo_greta_du_val_doise.png" alt="Sponsor 3" className="sponsor-img" /></Link>
 
+                    </div>
                     </div>
 
                     <div className="row px-4 mb-5">
@@ -103,7 +108,7 @@ class Home extends Component {
                                             </p>
 
                                             <div className="text-end">
-                                                <i className="fa-solid fa-arrow-right"></i>
+                                                <i className="fa-solid fa-arrow-right" onClick={() => { toast('Cette fonctionnalité n\'est pas encore disponible', { icon: '🔍' }) }} ></i>
                                             </div>
 
                                         </div>
@@ -120,7 +125,7 @@ class Home extends Component {
                                             </p>
 
                                             <div className="text-end">
-                                                <i className="fa-solid fa-arrow-right"></i>
+                                                <i className="fa-solid fa-arrow-right" onClick={() => { toast('Cette fonctionnalité n\'est pas encore disponible', { icon: '🔍' }) }} ></i>
                                             </div>
 
                                         </div>
@@ -137,7 +142,7 @@ class Home extends Component {
                                             </p>
 
                                             <div className="text-end">
-                                                <i className="fa-solid fa-arrow-right"></i>
+                                                <i className="fa-solid fa-arrow-right" onClick={() => { toast('Cette fonctionnalité n\'est pas encore disponible', { icon: '🔍' }) }} ></i>
                                             </div>
 
                                         </div>
@@ -231,7 +236,7 @@ class Home extends Component {
             </div>
 
             <Footer />
-            </>
+        </>
         );
     }
 }

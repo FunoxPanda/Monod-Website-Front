@@ -14,7 +14,7 @@ import './components/styles/global.scss';
 const App = () => {
     return (
 
-        <Router>
+        <Router basename={"/lpo-monod"}>
             <Routes>
                 <Route path={"/*"} element={<Home />} />
                 <Route path={"/formations"} element={<Formations />} />

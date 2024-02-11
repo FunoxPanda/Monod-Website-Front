@@ -2,6 +2,8 @@
 
 
     .hero__subpage {
+        background-attachment: fixed;
+        background-position: bottom;
         height: 50vh;
 
         box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
@@ -43,6 +45,7 @@
             width: auto !important;
         }
     }
+
     .subsection {
         font-size: 1em;
         font-weight: 700;

@@ -12,11 +12,11 @@ class Footer extends Component {
 
                     <div className="text-center">
 
-                        <img src={process.env.PUBLIC_URL + "/assets/images/logotext.png"} alt="Logo Gustave Monod" className="footer-logo" />
+                        <img src={process.env.PUBLIC_URL + "/assets/images/logotext.png"} alt="Logo Gustave Monod" className="footer-logo mb-3" />
                     </div>
 
                     <div className="row">
-                        <div className="col-md-8">
+                        <div className="col-md-8 mb-3">
                             <h5 className="footer-title">Liens utiles</h5>
                             <ul>
                                 <li><Link to="https://0952196w.index-education.net/pronote/?login=true">Accès Pronote</Link></li>
@@ -24,11 +24,11 @@ class Footer extends Component {
                                 <li><NavLink to="/plan">Plan du site</NavLink></li>
                             </ul>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4 mb-3">
 
                             <h5 className="footer-title">Contact</h5>
                             <p>Adresse : 71 Avenue de Ceinture, 95880 Enghien-les-Bains</p>
-                            <p>Téléphone : 01 39 89 32 41</p>
+                            <p>Téléphone : (+33) 01 39 89 32 41</p>
                             <p>Email : <a href="mailto:0952196w@ac-versailles.fr" className="text-link">0952196w@ac-versailles.fr</a></p>
 
 
@@ -39,7 +39,10 @@ class Footer extends Component {
 
             </footer>
             <div className="subfooter">
-                <p>2024 &copy; Tous droits réservés au lycée Gustave Monod<br />Edité par Ewen Rodrigues de Oliveira</p>
+                <p>
+                    2024 &copy; Tous droits réservés<br />
+                    Lycée Polyvalent Gustave Monod
+                </p>
             </div>
         </>
         );

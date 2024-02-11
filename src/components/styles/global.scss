@@ -10,7 +10,8 @@
 
 html,
 body {
-    //font-family: 'Inter Tight'
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -200,37 +201,26 @@ footer ul li a:hover {
 
 /* HERO */
 
-
 .hero {
     height: 98.5vh;
-
-    /* Margin de .25rem sur les contours */
     margin: .25rem;
-    padding: .25rem;
+    padding: 1rem;
     color: white;
-
-
     background: linear-gradient(rgba(90, 124, 136, .5), rgba(90, 124, 136, .5)), url('../images/background.jpg');
     background-size: cover;
     background-position: center;
-    /* Faire que l'image de fond bouge au scroll */
-    background-attachment: fixed;
-    /* Mettre un linear-gradient pour assombrir l'image de fond */
-
-
+    background-attachment: absolute;
     transition: .3s all ease;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     margin-bottom: 5rem;
 
     .since {
         display: flex;
         align-items: center;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+        margin: 0 0 1rem 0;
+        padding: 0;
         filter: brightness(100%);
     }
 
@@ -238,38 +228,34 @@ footer ul li a:hover {
         width: 100%;
         height: 1px;
         background-color: #fff;
-        margin: 0 1rem 0 1rem;
-        padding: 0 0 0 0;
+        margin: 0.5rem 0;
+        padding: 0;
     }
 
     .year {
         font-size: 1.5em;
         font-weight: 700;
         color: #fff;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+        margin: 0;
+        padding: 0;
         font-family: 'Antic Didone', serif;
-
-        /* Prendre tout l'espace nécessaire mais pas de retour à la ligne */
         white-space: nowrap;
-
     }
 
     .text {
-        padding: 4em;
-        padding-bottom: .25rem;
+        padding: 2rem;
     }
 
     .slogan {
         font-size: 3rem;
         font-weight: 0;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+        margin: 0;
+        padding: 0;
         font-family: 'Antic Didone', serif;
     }
 
     .cta {
-        padding: 2em
+        padding: 1em;
     }
 
     .btn-home {
@@ -287,7 +273,6 @@ footer ul li a:hover {
         transition: .3s all ease;
     }
 
-
     .scroll {
         position: absolute;
         bottom: 1rem;
@@ -297,11 +282,8 @@ footer ul li a:hover {
         justify-content: center;
         z-index: 1000;
         animation: scroll 2s infinite;
-
-        /* Centrer horizontalement */
-
         left: 50%;
-
+        transform: translateX(-50%);
     }
 
     .scroll label {
@@ -314,14 +296,11 @@ footer ul li a:hover {
         width: 1px;
         height: 2.75rem;
         background-color: white;
-        margin: .5rem 0 .5rem 0;
-        padding: 0 0 0 0;
+        margin: .5rem 0;
+        padding: 0;
     }
 
-    /* Faire que le scroll aille de haut en bas toutes les 2 secondes et qu'elle remonte ensuite */
-
     @keyframes scroll {
-
         0% {
             transform: translateY(-1rem);
         }
@@ -343,7 +322,39 @@ footer ul li a:hover {
         }
     }
 
+    /* Modification du slogan pour mobile */
+
+
+    // Abaisser la police du slogan pour les écrans entre 1200px et 1400px
+
+    @media only screen and (max-width: 1400px) {
+        .slogan {
+            font-size: 2.5rem;
+        }
+
+        .swann {
+            img {
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .slogan {
+            font-size: 1.875rem;
+            text-align: center;
+            /* Centrage sur mobile */
+            padding: 0.5em;
+            /* Améliorer la lisibilité sur mobile */
+        }
+
+        .scroll {
+            display: none !important;
+        }
+    }
 }
+
 
 
 .title {
@@ -395,4 +406,12 @@ ul {
             transition: .3s all ease;
         }
     }
+}
+
+.alttabname {
+    margin: 1rem 0 1rem 0;
+
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
 }
