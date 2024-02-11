@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Monod-Website-Front
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue dans le référentiel du site Web du Lycée Gustave Monod d'Enghien-les-Bains.
 
-## Available Scripts
+## Auteur
+Ewen Rodrigues de Oliveira
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+Ce projet est une refonte du site Web actuel du Lycée Gustave Monod d'Enghien-les-Bains, visant à offrir une expérience plus élégante et prestigieuse. Il est construit avec Node.js, ReactJS et Sass pour assurer une base solide et une interface utilisateur moderne.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prérequis
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Node.js](https://nodejs.org/) - Assurez-vous d'avoir Node.js installé sur votre machine.
+- [npm](https://www.npmjs.com/) - Gestionnaire de packages Node.js.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clonez ce référentiel sur votre machine locale.
+   ```bash
+   git clone https://github.com/FunoxPanda/Monod-Website-Front.git
+   ```
+2. Accédez au répertoire du projet.
+   ```bash
+    cd Monod-Website-Front
+    ```
+3. Installez les dépendances.
+    ```bash
+    npm install
+    ```
 
-### `npm run build`
+## Utilisation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Exécutez le serveur de développement.
+    ```bash
+    npm start
+    ```
+2. Ouvrez votre navigateur et accédez à [http://localhost:3000](http://localhost:3000).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Licence
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Vous n'êtes pas autorisé à utiliser ce projet à des fins commerciales. Interdiction de vendre, de modifier ou de distribuer le code source de ce projet sans autorisation.
+Tout contact concernant l'utilisation de ce projet doit être adressé sur Discord à : @funoxpanda.
