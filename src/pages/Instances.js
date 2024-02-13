@@ -49,7 +49,7 @@ class Instances extends Component {
                             </section>
                         </div>
                         <div className="col-md-6 px-4 text-center">
-                            <img src={process.env.PUBLIC_URL + "/assets/images/commemorations.jpg"} alt="Lycée Gustave Monod" className="img-fluid welcome-img" /><br />
+                            <img src={process.env.PUBLIC_URL + "/assets/images/commemorations.webp"} alt="Lycée Gustave Monod" className="img-fluid welcome-img" /><br />
                             <small className="text-muted">8 mai 2023 &copy; CSN Monod</small>
                         </div>
                     </div>

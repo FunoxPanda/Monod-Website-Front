@@ -31,7 +31,7 @@ class Formations extends Component {
                             <div className="col-md-4 mb-4">
 
                                 <div className="card card__section">
-                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/abibac.jpg"} className="card-img-top" alt="Section Abibac" />
+                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/abibac.webp"} className="card-img-top" alt="Section Abibac" />
                                         <div className="card-body">
                                             <h5 className="card-title">Abibac</h5>
 
@@ -44,7 +44,7 @@ class Formations extends Component {
 
 
                                             <div className="text-end">
-                                                <i className="fa-solid fa-arrow-right"></i>
+                                                <i class="fi fi-tr-arrow-small-right"></i>
                                             </div>
                                         </div>
 
@@ -52,7 +52,7 @@ class Formations extends Component {
                             </div>
                             <div className="col-md-4 mb-4">
                                 <div className="card card__section">
-                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/euro.jpg"} className="card-img-top" alt="Section Européenne" />
+                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/euro.webp"} className="card-img-top" alt="Section Européenne" />
                                         <div className="card-body">
                                             <h5 className="card-title">Européenne Anglais/Allemand</h5>
 
@@ -65,7 +65,7 @@ class Formations extends Component {
 
 
                                             <div className="text-end">
-                                                <i className="fa-solid fa-arrow-right"></i>
+                                                <i class="fi fi-tr-arrow-small-right"></i>
                                             </div>
                                         </div>
 
@@ -73,7 +73,7 @@ class Formations extends Component {
                             </div>
                             <div className="col-md-4 mb-4">
                                 <div className="card card__section">
-                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/upe2a.jpg"} className="card-img-top" alt="UPE2A" />
+                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/upe2a.webp"} className="card-img-top" alt="UPE2A" />
                                         <div className="card-body">
                                             <h5 className="card-title">UPE2A</h5>
 
@@ -86,7 +86,7 @@ class Formations extends Component {
 
 
                                             <div className="text-end">
-                                                <i className="fa-solid fa-arrow-right"></i>
+                                                <i class="fi fi-tr-arrow-small-right"></i>
                                             </div>
                                         </div>
 
@@ -99,7 +99,7 @@ class Formations extends Component {
                         <div className="row mb-5">
                             <div className="col-md-4 mb-4">
                                 <div className="card card__section">
-                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/mpsi.jpg"} className="card-img-top" alt="MPSI" />
+                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/mpsi.webp"} className="card-img-top" alt="MPSI" />
                                         <div className="card-body">
                                             <h5 className="card-title">MPSI</h5>
 
@@ -112,7 +112,7 @@ class Formations extends Component {
 
 
                                             <div className="text-end">
-                                                <i className="fa-solid fa-arrow-right"></i>
+                                                <i class="fi fi-tr-arrow-small-right"></i>
                                             </div>
                                         </div>
 
@@ -120,7 +120,7 @@ class Formations extends Component {
                             </div>
                             <div className="col-md-4 mb-4">
                                 <div className="card card__section">
-                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/pcsi.jpg"} className="card-img-top" alt="PCSI" />
+                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/pcsi.webp"} className="card-img-top" alt="PCSI" />
                                         <div className="card-body">
                                             <h5 className="card-title">PCSI</h5>
 
@@ -133,7 +133,7 @@ class Formations extends Component {
 
 
                                             <div className="text-end">
-                                                <i className="fa-solid fa-arrow-right"></i>
+                                                <i class="fi fi-tr-arrow-small-right"></i>
                                             </div>
                                         </div>
 
@@ -141,7 +141,7 @@ class Formations extends Component {
                             </div>
                             <div className="col-md-4 mb-4">
                                 <div className="card card__section">
-                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/kagne.jpg"} className="card-img-top" alt="Khâgne" />
+                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/kagne.webp"} className="card-img-top" alt="Khâgne" />
                                         <div className="card-body">
                                             <h5 className="card-title">Hypokhâgne</h5>
 
@@ -154,7 +154,7 @@ class Formations extends Component {
 
 
                                             <div className="text-end">
-                                                <i className="fa-solid fa-arrow-right"></i>
+                                                <i class="fi fi-tr-arrow-small-right"></i>
                                             </div>
                                         </div>
 
@@ -162,7 +162,7 @@ class Formations extends Component {
                             </div>
                             <div className="col-md-4 mb-4">
                                 <div className="card card__section">
-                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/arbitrage.jpg"} className="card-img-top" alt="Section arbitrage" />
+                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/arbitrage.webp"} className="card-img-top" alt="Section arbitrage" />
                                         <div className="card-body">
                                             <h5 className="card-title">Classe arbitrage</h5>
 
@@ -176,7 +176,7 @@ class Formations extends Component {
 
 
                                             <div className="text-end">
-                                                <i className="fa-solid fa-arrow-right"></i>
+                                                <i class="fi fi-tr-arrow-small-right"></i>
                                             </div>
                                         </div>
 
@@ -184,7 +184,7 @@ class Formations extends Component {
                             </div>
                             <div className="col-md-4 mb-4">
                                 <div className="card card__section">
-                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/bts.jpg"} className="card-img-top" alt="BTS" />
+                                    <img src={process.env.PUBLIC_URL + "/assets/images/sections/bts.webp"} className="card-img-top" alt="BTS" />
                                         <div className="card-body">
                                             <h5 className="card-title">Brevets de Technicien Supérieur</h5>
 
@@ -197,7 +197,7 @@ class Formations extends Component {
 
 
                                             <div className="text-end">
-                                                <i className="fa-solid fa-arrow-right"></i>
+                                                <i class="fi fi-tr-arrow-small-right"></i>
                                             </div>
                                         </div>
 

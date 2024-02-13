@@ -1,6 +1,6 @@
 .Clubs {
 
-    
+
     .hero__subpage {
         background-attachment: fixed;
         background-position: bottom;
@@ -21,10 +21,6 @@
             transition: .3s all ease;
         }
 
-
-        .text-red {
-            color: var(--red) !important;
-        }
 
         .card-title {
             font-size: .875em;
@@ -52,4 +48,187 @@
 
 .card__club__recommendation {
     border-color: var(--red) !important;
+}
+
+.ClubPage {
+
+    /*
+    <div className="container mb-5">
+
+                    <div className="row">
+
+                        <div className="col-md-8">
+
+                            <h2 className="club__title">Présentation</h2>
+
+                            <p>
+                                Dolor Lorem cillum irure elit officia magna. Nisi nisi elit labore duis et officia consequat quis culpa. Deserunt est eu consequat velit id dolor aute ipsum adipisicing in aliqua esse consectetur. Sit esse Lorem quis eiusmod cupidatat in eu. Lorem est ipsum mollit adipisicing ad sit dolore occaecat eiusmod laboris eiusmod.<br />
+                                Amet eiusmod laborum quis laborum fugiat officia qui excepteur sunt nisi aliqua reprehenderit. Deserunt sit amet eiusmod dolor deserunt. Aliqua est anim sit duis magna culpa duis deserunt veniam proident enim nostrud. In pariatur officia cupidatat deserunt aliquip ipsum esse quis. Est consequat sunt pariatur mollit reprehenderit velit dolor mollit.
+
+                            </p>
+
+                            <h2 className="club__title">Fil d'actualité</h2>
+
+                            <div className="club__news">
+                                <div className="club__news__item">
+                                    <h3>Titre de l'actualité</h3>
+                                    <span className="club__news__date">mardi 13 février 2024</span>
+                                    <p>
+                                        Dolor Lorem cillum irure elit officia magna. Nisi nisi elit labore duis et officia consequat quis culpa. Deserunt est eu consequat velit id dolor aute ipsum adipisicing in aliqua esse consectetur. Sit esse Lorem quis eiusmod cupidatat in eu. Lorem est ipsum mollit adipisicing ad sit dolore occaecat eiusmod laboris eiusmod.
+                                    </p>
+                                </div>
+
+                                <div className="club__news__item">
+                                    <h3>Titre de l'actualité</h3>
+                                    <span className="club__news__date">mardi 13 février 2024</span>
+                                    <p>
+                                        Dolor Lorem cillum irure elit officia magna. Nisi nisi elit labore duis et officia consequat quis culpa. Deserunt est eu consequat velit id dolor aute ipsum adipisicing in aliqua esse consectetur. Sit esse Lorem quis eiusmod cupidatat in eu. Lorem est ipsum mollit adipisicing ad sit dolore occaecat eiusmod laboris eiusmod.
+                                    </p>
+                                    <div className="club__news__item__image">
+                                        <img src="https://via.placeholder.com/1920x1080" alt="image" className="img-fluid" />
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div className="col-md-4">
+
+                            <div className="card mb-4">
+                                <div className="card-header">
+                                    <h3>Informations</h3>
+                                </div>
+                                <div className="card-body">
+                                    <span className="club__info__item">
+                                        <b className="club__info__item__label">Nom du club :</b> <span className="club__info__item__value">Association sportive</span>
+                                    </span>
+
+                                    <span className="club__info__item">
+                                        <b className="club__info__item__label">Coût de l'adhésion :</b> <span className="club__info__item__value">20€</span>
+                                    </span>
+
+                                    <span className="club__info__item">
+                                        <b className="club__info__item__label">Lieu :</b> <span className="club__info__item__value">Gymnase</span>
+                                    </span>
+
+                                    <span className="club__info__item">
+                                        <b className="club__info__item__label">Horaires :</b> <span className="club__info__item__value">Mercredi 14h-16h</span>
+                                    </span>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                */
+
+    .club__title {
+        font-size: 1.1rem;
+        font-family: 'Inter Tight';
+        color: var(--primary);
+        text-transform: uppercase;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .club__news {
+        .club__news__item {
+            margin: 1rem 0 1rem 0;
+            border: 2px solid transparent;
+            transition: .3s all ease;
+
+            border-left: 2px solid var(--red);
+            padding-left: 1rem;
+
+            h3 {
+                font-size: 1.125em;
+                font-weight: 700;
+                color: var(--red);
+                text-transform: uppercase;
+            }
+
+            .club__news__date {
+                font-size: .875em;
+                font-weight: 400;
+                color: var(--dark-primary);
+                margin-bottom: 1rem;
+            }
+
+            p {
+                margin-top: 1rem;
+                font-size: .9em;
+                font-weight: 400;
+                color: var(--dark-primary);
+                font-family: 'Inter Tight';
+            }
+
+            .club__news__item__image {
+                margin-top: 1rem;
+                img {
+                    width: 15rem;
+                    cursor: pointer;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+
+    .club__sidebar {
+        
+        .card {
+            margin: 1rem 0 1rem 0;
+            padding: 0 0 0 0;
+            border: 2px solid transparent;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+            transition: .3s all ease;
+
+
+            .card-header {
+                h3 {
+                    font-size: 1.25em;
+                    font-weight: 700;
+                    color: var(--primary);
+                    text-transform: uppercase;
+                }
+            }
+
+            .card-body {
+                .club__info__item {
+                    margin: 1rem 0 1rem 0;
+                    padding: 0 0 0 0;
+                    border: 2px solid transparent;
+                    transition: .3s all ease;
+
+
+                    .club__info__item__label {
+                        font-size: .875em;
+                        font-weight: 700;
+                        color: var(--primary);
+                        text-transform: uppercase;
+                    }
+
+                    .club__info__item__value {
+                        font-size: 1.125em;
+                        font-weight: 400;
+                        color: var(--dark-primary);
+                        font-family: 'Inter Tight';
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
 }

@@ -206,7 +206,7 @@ footer ul li a:hover {
     margin: .25rem;
     padding: 1rem;
     color: white;
-    background: linear-gradient(rgba(90, 124, 136, .5), rgba(90, 124, 136, .5)), url('../images/background.jpg');
+    background: linear-gradient(rgba(90, 124, 136, .5), rgba(90, 124, 136, .5)), url('../images/background.webp');
     background-size: cover;
     background-position: center;
     background-attachment: absolute;
@@ -414,4 +414,30 @@ ul {
     font-weight: 700;
     color: var(--primary);
     text-transform: uppercase;
+}
+
+.alert-danger {
+    border: 1px solid var(--red);
+    background-color: #f8d7da;
+    color: var(--dark-red);
+    padding: 1rem;
+}
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+    font-weight: 500;
+    transition: .3s all ease;
+
+    &:hover, &:focus {
+        background-color: var(--dark-primary) !important;
+        border-color: var(--dark-primary) !important;
+        color: white;
+        transition: .3s all ease;
+    }
+
+}
+
+.text-red {
+    color: var(--red) !important;
 }

@@ -12,7 +12,7 @@ class Footer extends Component {
 
                     <div className="text-center">
 
-                        <img src={process.env.PUBLIC_URL + "/assets/images/logotext.png"} alt="Logo Gustave Monod" className="footer-logo mb-3" />
+                        <img src={process.env.PUBLIC_URL + "/assets/images/logotext_transparent.webp"} alt="Logo Gustave Monod" className="footer-logo mb-3" title="Logo du lycée Gustave Monod" />
                     </div>
 
                     <div className="row">
@@ -22,6 +22,7 @@ class Footer extends Component {
                                 <li><Link to="https://0952196w.index-education.net/pronote/?login=true">Accès Pronote</Link></li>
                                 <li><NavLink to="/mentions/legales">Mentions légales</NavLink></li>
                                 <li><NavLink to="/plan">Plan du site</NavLink></li>
+                                <li><NavLink to="/admin"><i class="fi fi-tr-user-lock fw-bold me-2"></i> Administration</NavLink></li>
                             </ul>
                         </div>
                         <div className="col-md-4 mb-3">
