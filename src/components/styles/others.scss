@@ -1,32 +1,32 @@
 .Legal {
 
-    .hero__subpage {
-        background-attachment: fixed;
-        background-position: bottom;
-        height: 50vh;
+        .hero__subpage {
+            background-attachment: fixed;
+            background-position: bottom;
+            height: 50vh;
 
-        box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+            box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
 
-    }
-
-    .title {
-        font-size: 2.5em;
-        font-weight: 700;
-        font-family: 'Antic Didone', serif;
-        color: var(--primary);
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        padding-top: 0;
-
-        .subtitle {
-            margin: 1rem 0 1rem 0;
-            font-weight: 700;
-            color: var(--primary);
-            text-transform: uppercase;
         }
-    }
 
-}
+        .title {
+            font-size: 2.5em;
+            font-weight: 700;
+            font-family: 'Antic Didone', serif;
+            color: var(--primary);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding-top: 0;
+
+            .subtitle {
+                margin: 1rem 0 1rem 0;
+                font-weight: 700;
+                color: var(--primary);
+                text-transform: uppercase;
+            }
+        }
+
+    }

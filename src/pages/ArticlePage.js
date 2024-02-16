@@ -8,7 +8,7 @@ class ArticlePage extends Component {
     render() {
         return (<>
 
-            <div className="Articles ArticlePage">
+            <div className="Monod Articles ArticlePage">
 
                 <Navigation />
                 <section className="hero hero__subpage">

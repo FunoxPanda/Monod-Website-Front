@@ -6,7 +6,7 @@ class Footer extends Component {
 
     render() {
         return (<>
-            <footer>
+            <footer className="Monod">
 
                 <div className="container">
 
@@ -22,7 +22,7 @@ class Footer extends Component {
                                 <li><Link to="https://0952196w.index-education.net/pronote/?login=true">Accès Pronote</Link></li>
                                 <li><NavLink to="/mentions/legales">Mentions légales</NavLink></li>
                                 <li><NavLink to="/plan">Plan du site</NavLink></li>
-                                <li><NavLink to="/admin"><i class="fi fi-tr-user-lock fw-bold me-2"></i> Administration</NavLink></li>
+                                <li><NavLink to="/admin/tableau/de/bord"><i class="fi fi-tr-user-lock fw-bold me-2"></i> Administration</NavLink></li>
                             </ul>
                         </div>
                         <div className="col-md-4 mb-3">

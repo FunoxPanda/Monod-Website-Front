@@ -9,7 +9,7 @@ class Clubs extends Component {
     render() {
         return (<>
 
-            <div className="Clubs">
+            <div className="Monod Clubs">
 
                 <Navigation />
                 <section className="hero hero__subpage">

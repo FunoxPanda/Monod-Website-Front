@@ -9,7 +9,7 @@ class Articles extends Component {
     render() {
         return (<>
 
-            <div className="Articles ">
+            <div className="Monod Articles">
 
                 <Navigation />
                 <section className="hero hero__subpage">

@@ -9,6 +9,7 @@ class Navigation extends Component {
 
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
+            if (!navbar) return;
             if (window.scrollY > 150) {
                 navbar.classList.add('scrolled');
             } else {
@@ -21,6 +22,7 @@ class Navigation extends Component {
     componentWillUnmount() {
         window.removeEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
+            if (!navbar) return;
             if (window.scrollY > 150) {
                 navbar.classList.add('scrolled');
             } else {

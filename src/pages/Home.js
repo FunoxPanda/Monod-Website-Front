@@ -9,7 +9,7 @@ import { Link, NavLink } from 'react-router-dom';
 class Home extends Component {
     render() {
         return (<>
-            <div className="Home">
+            <div className="Home Monod">
                 <Navigation />
                 <section className="hero">
 
@@ -83,7 +83,7 @@ class Home extends Component {
                             <small className="text-muted">Château Léon &copy; David Davrain</small>
                         </div>
                     </div>
-                    <div className="container-fluid">
+                    <div className="Monod container-fluid">
 
                         <div className="sponsors">
 

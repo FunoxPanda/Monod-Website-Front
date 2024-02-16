@@ -9,7 +9,7 @@ class Instances extends Component {
     render() {
         return (<>
 
-            <div className="Instances">
+            <div className="Monod Instances">
 
                 <Navigation />
                 <section className="hero hero__subpage">

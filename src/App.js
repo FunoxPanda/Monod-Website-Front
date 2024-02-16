@@ -12,6 +12,9 @@ import Plan from "./pages/Plan";
 import Articles from "./pages/Articles";
 import ArticlePage from "./pages/ArticlePage";
 
+import AdminDashboard from "./pages/admin/Dashboard";
+import AdminSettings from "./pages/admin/Settings";
+
 import './components/styles/global.scss';
 
 const App = () => {
@@ -28,6 +31,11 @@ const App = () => {
                 <Route path={"/union/lyceene"} element={<Instances />} />
                 <Route path={"/mentions/legales"} element={<Legal />} />
                 <Route path={"/plan"} element={<Plan />} />
+
+                {/* Section d'administration */}
+
+                <Route path={"/admin/*"} element={<AdminDashboard />} />
+                <Route path={"/admin/parametres"} element={<AdminSettings />} />
 
                 
             </Routes>

@@ -8,7 +8,7 @@ class Formations extends Component {
     render() {
         return (<>
 
-            <div className="Formations">
+            <div className="Monod Formations">
 
                 <Navigation />
                 <section className="hero hero__subpage">

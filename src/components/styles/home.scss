@@ -1,4 +1,3 @@
-
 .Home {
 
     .content {
@@ -16,132 +15,12 @@
         text-transform: uppercase;
 
     }
-    
-    /* Actualité */
-    
-    .news {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem 0 2rem 0;
-    }
-    
-    .news .title {
-        font-size: 3em;
-        font-family: 'Antic Didone', serif;
-        color: var(--primary);
-    }
-    
-    .card__news {
-        margin: 1rem 0 1rem 0;
-        padding: 0 0 0 0;
-        border: none !important;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
-        transition: .3s all ease;
-    }
-    
-    .card__news:hover {
-        box-shadow: 0 0 1.5rem rgba(0, 0, 0, .2);
-        transition: .3s all ease;
-    }
-    
-    .card__news .card-title {
-        font-size: .875em;
-        font-weight: 700;
-        color: var(--primary);
-        text-transform: uppercase;
-    }
-    
-    .card__news .card-text {
-        font-size: 1.125em;
-        font-weight: 400;
-        color: var(--dark-primary);
-        font-family: 'Inter Tight';
-    }
-    
-    .card__news .card-img-top {
-        height: 15rem;
-        object-fit: cover;
-        object-position: center;
-        width: auto !important;
-    }
-    
-    
-    .monod-background {
-        background-image: url('../images/inauguration.webp');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: 75vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-    }
-    
 
-    .proviseur-mot {
-        padding: 2rem 0 2rem 0;
-    }
-    
-    .proviseur {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-    }
-    
-    .proviseur .img-proviseur {
-        height: 15rem;
-        width: 15rem;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 50%;
-        margin: 0 0 1rem 0;
-        padding: 0 0 0 0;
-    
-        
-    }
-    
-    /* Effet de haut/bas sur l'image du proviseur */
-    
-    .img-proviseur {
-        transition: .3s all ease;
-    }
-    
-    .img-proviseur:hover {
-        transform: translateY(-.5rem);
-        transition: .3s all ease;
-    }
-    
-    .proviseur .name {
-        font-size: 1.5em;
-        font-weight: 700;
-        color: var(--primary);
-        margin: 0 0 .5rem 0;
-        padding: 0 0 0 0;
-    }
-    
-    .proviseur .fonction {
-        font-size: 1.25em;
-        font-weight: 700;
-        color: var(--dark-primary);
-        margin: 0 0 1rem 0;
-        padding: 0 0 0 0;
-    }
-    
-    .proviseur-mot .text {
-        font-size: 1.125em;
-        font-weight: 400;
-        color: var(--dark-primary);
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
-    }
-    
+    /* Actualité */
+
+
+}
+
 .sponsors {
     display: flex;
     justify-content: center;
@@ -163,4 +42,125 @@
     max-height: 25rem;
 }
 
+
+.news {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 2rem 0;
+}
+
+.news .title {
+    font-size: 3em;
+    font-family: 'Antic Didone', serif;
+    color: var(--primary);
+}
+
+.card__news {
+    margin: 1rem 0 1rem 0;
+    padding: 0 0 0 0;
+    border: none !important;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    transition: .3s all ease;
+}
+
+.card__news:hover {
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, .2);
+    transition: .3s all ease;
+}
+
+.card__news .card-title {
+    font-size: .875em;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.card__news .card-text {
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--dark-primary);
+    font-family: 'Inter Tight';
+}
+
+.card__news .card-img-top {
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    width: auto !important;
+}
+
+.monod-background {
+    background-image: url('../images/inauguration.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+
+.proviseur-mot {
+    padding: 2rem 0 2rem 0;
+}
+
+.proviseur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.proviseur .img-proviseur {
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 0;
+
+
+}
+
+/* Effet de haut/bas sur l'image du proviseur */
+
+.img-proviseur {
+    transition: .3s all ease;
+}
+
+.img-proviseur:hover {
+    transform: translateY(-.5rem);
+    transition: .3s all ease;
+}
+
+.proviseur .name {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 .5rem 0;
+    padding: 0 0 0 0;
+}
+
+.proviseur .fonction {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: var(--dark-primary);
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 0;
+}
+
+.proviseur-mot .text {
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--dark-primary);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }

@@ -9,7 +9,7 @@ class Plan extends Component {
     render() {
         return (<>
 
-            <div className="Legal">
+            <div className="Monod Legal">
 
                 <Navigation />
                 <section className="hero hero__subpage">

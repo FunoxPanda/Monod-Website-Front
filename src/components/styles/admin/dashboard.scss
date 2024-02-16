@@ -1,0 +1,120 @@
+.Admin {
+    @import url('https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;500;600;700&display=swap');
+
+    background-color: var(--background-gray-light);
+    font-family: 'Noto Sans',
+        sans-serif;
+    min-height: 100vh;
+
+    .brand-img {
+        max-height: 2.5rem;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .school-detail {
+        border-left: 3px solid #000 !important;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        line-height: 1rem !important;
+        margin-right: 1rem;
+    }
+
+    .name,
+    .city {
+        font-weight: 600;
+        font-size: 1rem;
+
+    }
+
+    .badge__news {
+        background-color: #f59e0b;
+        color: var(--white);
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 50%;
+        transform: translateY(-0.2rem);
+        margin-left: 0.2rem;
+        cursor: help;
+    }
+
+    .card {
+        border-radius: 0.25rem;
+        border: 1px solid #e5e7eb;
+        padding: 1rem;
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+    }
+    .monod-form {
+
+        label {
+            font-size: .8rem;
+            font-weight: 600;
+            margin-bottom: .5rem;
+            color: #6b7280;
+            text-transform: uppercase;
+        }
+
+        input {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            border: 1px solid #e5e7eb;
+            width: 100%;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+
+            &:focus {
+                border-color: var(--primary);
+                transition: all 0.3s ease;
+                box-shadow: none !important;
+            }
+        }
+    }
+
+}
+
+.Settings {
+    .badge__group {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.25rem;
+        margin-right: 0.5rem;
+        font-weight: 600;
+
+
+    }
+
+    .bg-superviseur {
+        background-color: rgba(245, 11, 11, 0.1);
+        color: rgb(245, 11, 11);
+    }
+
+    .bg-publieur {
+        background-color: rgba(59, 130, 246, 0.1);
+        color: rgb(59, 130, 246);
+    }
+
+    .fi {
+        font-size: 1.5rem;
+        color: var(--gray);
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--red);
+            transition: all 0.3s ease;
+        }
+    }
+
+}

@@ -8,7 +8,7 @@ class ClubPage extends Component {
     render() {
         return (<>
 
-            <div className="Clubs ClubPage">
+            <div className="Monod Clubs ClubPage">
 
                 <Navigation />
                 <section className="hero hero__subpage">
